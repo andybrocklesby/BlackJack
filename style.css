@@ -75,3 +75,8 @@ button{
     color: rgb(41, 81, 41);
     cursor: pointer;
 }
+
+#error-display{
+    font-size: 20px;
+    color: rgb(246, 160, 160);
+}

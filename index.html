@@ -13,6 +13,7 @@
     
     <div id="game-wrapper">
         <h1>BlackJack</h1>
+        <p id="message-display">Press start to play game</p>
         <div id="card-section">
             <div class="card"></div>
             <div class="card"></div>
@@ -21,8 +22,9 @@
             <div class="card"></div>
         </div>
         <p id="sum-display">Sum: </p>
-        <button>START GAME</button>
+        <button onclick="startGame()">START GAME</button>
         <button onclick="newCard()">NEW CARD</button>
+        <p id="error-display"></p>
     </div>
 
     <script src="app.js"></script>
