@@ -107,3 +107,23 @@ function getRandomNumber(){
     }
 }
 
+function resetGame(){
+    cardNumbers = [];
+    cardSum = 0;
+    sumDisplay.textContent = "Sum: " + cardSum;
+    message = "Press start to play game";
+    messageDisplay.textContent = message;
+    errorMessage = "";
+    errorDisplay.textContent = errorMessage;
+    isGameStarted = false;
+    hasLost = false;
+    hasWon = false;
+
+    // Remove cards from the display
+    for(let i = 0; i < placeholders.length; i++){
+        placeholders[i].textContent = "";
+        placeholders[i].style.background = "";
+        placeholders[i].style.color = "";
+    }
+}
+
